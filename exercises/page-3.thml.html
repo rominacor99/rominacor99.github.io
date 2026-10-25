@@ -1,93 +1,145 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Page with Sections</title>
-<meta name="description" content="A sample web page with multiple sections.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Web Page with Sections</title>
+    <meta name="description" content="A sample web page with multiple sections.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
     <style type="text/tailwindcss">
+        body {
+            @apply font-serif text-blue-200;
+            @apply font-['Quantico'];
+        }
+        
+        header h1 {
+            @apply text-6xl md:text-9xl mb-10 font-bold text-blue-800;
+        }
 
-            header {
-        @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-    }
+        header h2 {
+            @apply text-3xl md:text-5xl italic text-blue-800;
+        }
 
-    section {   
-        @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-    }
+        section {
+            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+        }
+
+        section h2 {
+            @apply mt-8 mb-2 text-2xl md:text-4xl font-bold tracking-tight font-bold text-blue-800;
+        }
+
+        section p {
+            @apply mb-4 text-lg md:text-2xl leading-10 text-blue-800;
+        }
+
+        .section-1 { @apply bg-yellow-200; }
+        .section-2 { @apply bg-green-200; }
+        .section-3 { @apply bg-orange-200; }
+        .section-4 { @apply bg-sky-950; }
+        .section-5 { @apply bg-rose-200; }
+
+         .quantico-regular {
+            font-family: "Quantico", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+        .quantico-bold {
+            font-family: "Quantico", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .quantico-regular-italic {
+            font-family: "Quantico", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .quantico-bold-italic {
+            font-family: "Quantico", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
     </style>
+     
+</head>
 
-</head>    
-    
 <body>
 
- <!-- Hero block -->
+    <!-- Hero block -->
     <header>
-        <h1>Big heading</h1>
-        <h2>Smaller sub-heading</h2>
+        <section>
+            <h1>Big heading</h1>
+            <h2>Smaller sub-heading</h2>
+        </section>
     </header>
 
     <!-- Main content of web page in sections -->
     <main>
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
+        <section class=" section-1">
+            <h2>Smaller Heading</h2>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium officiis ratione, obcaecati quod incidunt possimus facilis. Exercitationem illum porro eius sint labore a dolor praesentium, atque expedita reiciendis reprehenderit.</p>
-
         </section>
 
-        <section>
+        <section class=" section-2">
             <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor aut a itaque quod laudantium animi distinctio, odit iusto iste, fugiat deserunt fugit quas praesentium ex cumque? Recusandae, pariatur quo!</p>
         </section>
 
-        <section>
+        <section class=" section-3">
             <h2>Smaller Heading</h2>
+
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, esse. Velit corrupti dolor, sint est id commodi iure quo quae dicta, dolorum illo molestias. Laborum perferendis tempora itaque repellat doloremque?</p>
+        </section class=" section-4">
+
+        <section>
+            <h2>Smaller Heading</h2>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, esse. Velit corrupti dolor, sint est id commodi iure quo quae dicta, dolorum illo molestias. Laborum perferendis tempora itaque repellat doloremque?</p>
         </section>
 
-        <section>
+        <section class=" section-5">
             <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, esse. Velit corrupti dolor, sint est id commodi iure quo quae dicta, dolorum illo molestias. Laborum perferendis tempora itaque repellat doloremque?</p>
         </section>
 
-        <section>
+        <section class=" section-1">
             <h2>Smaller Heading</h2>
+
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, esse. Velit corrupti dolor, sint est id commodi iure quo quae dicta, dolorum illo molestias. Laborum perferendis tempora itaque repellat doloremque?</p>
-        </section>
 
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
-
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, esse. Velit corrupti dolor, sint est id commodi iure quo quae dicta, dolorum illo molestias. Laborum perferendis tempora itaque repellat doloremque?</p>
-        
             <p><a href="../index.html">Back to Home page</a></p>
         </section>
-    
-    </main>
-    <!-- main content ends here -->
 
-    </body>
-    
-    </html>
-    
-    
+    </main>
+    <!-- Main content ends here -->
+
+</body>
+</html>

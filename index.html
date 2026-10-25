@@ -1,52 +1,106 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Romina Cordova | Creative Digital Designer</title>
-    <meta name="description" content="Hi I'm Mary, a UI & UX designer based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design.">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LG55PWEJN6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta name="description" content="Romina Cordova's web design practice portfolio, featuring HTML and CSS exercises, responsive layouts and creative digital design.">
 
-  gtag('config', 'G-LG55PWEJN6');
-</script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LG55PWEJN6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-LG55PWEJN6');
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <style type="text/tailwindcss">
+        
+         body {
+            @apply text-center bg-violet-200 text-violet-950;
+        }
+        
 
-            header {
+        header {
             @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
         }
 
-        section {   
+        header h1 {
+            @apply tracking-tighter text-5xl md:text-8xl mb-8;
+        }
+
+        header h2 {
+            @apply text-3xl md:text-5xl italic;
+        }
+
+        section {
             @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+        }
+
+        section h2 {
+            @apply mt-8 tracking-wider;
+        }
+
+        section h3 {
+            @apply mt-8 mb-6 text-2xl md:text-3xl uppercase font-bold;
+        }
+
+        section p {
+            @apply mb-6 text-xl md:text-2xl;
         }
     </style>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">    
-    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
 
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="assets/img/favicons/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="assets/img/favicons/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="assets/img/favicons/favicon-16x16.png">
+
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
 </head>
 
 <body>
     <header>
-    <h1>Hi, I'm Romina Cordova</h1>
-    <h2>Here I practice how not to make a web page</h2>
-    <img src="assets/img/capybara.jpg" width="212" height="308" alt="Mary Smith: Web Designer" >
-    <p>We deliver digital success to showcase your business at its best.</p> 
-    <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-    <p><a href="exercises/page-2.html">Purple Rain</a></p>
-    <p><a href="exercises/page-3.html">Web Page with Sections</a></p>
-    <p><a href="exercises/page-4.html">Vincent van Gogh</a></p> 
-    <p><a href="exercises/page-5.html">Irish Tourism</a></p>
-    <p><a href="exercises/hero-text.html">Hero block with animated text</a></p> 
+        <h1>Hi, I'm Romina Cordova</h1>
+
+        <h2>Here I practice how not to make a web page</h2>
+
+        <img
+            src="assets/img/capybara.jpg"
+            width="212"
+            height="308"
+            alt="Capybara"
+            class="mx-auto"
+        >
+
+        <p>We deliver digital success to showcase your business at its best.</p>
+
+        <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
+
+        <p><a href="exercises/page-2.html">Purple Rain</a></p>
+
+        <p><a href="exercises/page-3.thml.html">Web Page with Sections</a></p>
+
+        <p><a href="exercises/page-4.html">Vincent van Gogh</a></p>
+
+        <p><a href="exercises/page-5.html">Irish Tourism</a></p>
+
+        <p><a href="exercises/hero-text.html">Hero block with animated text</a></p>
     </header>
 </body>
+
 </html>
